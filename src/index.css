@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Manrope;
+  src: url('../src/assets/fonts/Manrope-Regular.ttf');
+}
+
+@font-face {
+  font-family: ManropeSemi;
+  src: url('../src/assets/fonts/Manrope-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../src/assets/fonts/Inter_28pt-Regular.ttf');
+}
+
+@font-face {
+  font-family: InterSemi;
+  src: url('../src/assets/fonts/Inter_28pt-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: DMSans;
+  src: url('../src/assets/fonts/DMSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../src/assets/fonts/OpenSans-Regular.ttf');
+}
+
+@import "tailwindcss";
+/* @plugin "daisyui"; */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #15181A;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --axis-color: #6F7174;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #383B3E;
+    background-color: #ffffff;
+    --axis-color: #383B3E;
+  }
+}
+
+@theme {
+  --font-manrope: Manrope, sans-serif;
+  --font-manrope-semi: ManropeSemi, sans-serif;
+  --font-inter: Inter, sans-serif;
+  --font-inter-semi: InterSemi, sans-serif;
+  --font-dmsans: DMSans, sans-serif;
+  --font-opensans: OpenSans, sans-serif;
+}
