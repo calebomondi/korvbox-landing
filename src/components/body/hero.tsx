@@ -1,4 +1,29 @@
+import { useState, useEffect } from "react";
+import { getPlatformStats } from "../../backend/apis";
+import type { Stats } from "../../types/index.types";
+
 export default function Hero() {
+  const [stats, setStats] = useState<Stats | null>(null);
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const data = await getPlatformStats();
+        setStats(data);
+        console.log("Fetched platform stats:", data);
+      } catch (error) {
+        console.error("Error fetching platform stats:", error);
+      }
+    };
+
+    fetchStats();
+  }, []);
+
+  // Helper function to format numbers with commas
+  function addCommas(num: number): string {
+    return num.toLocaleString("en-US");
+  }
+
   return (
     <section className="relative overflow-hidden xl:min-h-screen flex items-start">
       {/* Container with reduced top padding */}
@@ -24,7 +49,7 @@ export default function Hero() {
             <div className="flex flex-col">
               <p className="font-inter dark:text-gray-400 text-[#6F7174] text-sm text-center md:text-left">Total Deposits</p>
               <p className="font-opensans text-2xl md:text-3xl font-semibold text-[#15181A] dark:text-white text-center md:text-left">
-                $100,095
+                ${stats ? addCommas(stats.total_amount_deposited) : addCommas(9678)}
               </p>
             </div>
           </div>
