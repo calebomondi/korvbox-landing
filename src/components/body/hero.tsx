@@ -24,6 +24,8 @@ export default function Hero() {
     return num.toLocaleString("en-US");
   }
 
+  const usdPrice = 0.9999; // Example USD price, replace with actual data if available
+
   return (
     <section className="relative overflow-hidden xl:min-h-screen flex items-start">
       {/* Container with reduced top padding */}
@@ -49,7 +51,7 @@ export default function Hero() {
             <div className="flex flex-col">
               <p className="font-inter dark:text-gray-400 text-[#6F7174] text-sm text-center md:text-left">Total Deposits</p>
               <p className="font-opensans text-2xl md:text-3xl font-semibold text-[#15181A] dark:text-white text-center md:text-left">
-                ${stats ? addCommas(stats.total_amount_deposited) : addCommas(9678)}
+                ${stats ? addCommas(Math.floor(stats.total_amount_deposited * usdPrice)) : addCommas(9678)}
               </p>
             </div>
           </div>
