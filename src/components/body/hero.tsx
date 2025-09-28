@@ -24,7 +24,8 @@ export default function Hero() {
     return num.toLocaleString("en-US");
   }
 
-  const usdPrice = 0.9999; // Example USD price, replace with actual data if available
+  // USD price (estimate)
+  const usdPrice = 0.9995;
 
   return (
     <section className="relative overflow-hidden xl:min-h-screen flex items-start">
