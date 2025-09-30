@@ -19,10 +19,10 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="flex items-center justify-center space-x-3">
               <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
-                <a href="#">Terms of Service</a>
+                <a href="/terms-of-use">Terms of Service</a>
               </li>
               <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
-                <a href="#">Privacy Policy</a>
+                <a href="/privacy-policy">Privacy Policy</a>
               </li>
             </ul>
           </div>
