@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="">
       <div className="container mx-auto ">
-        <div className="flex flex-col md:flex-row md:items-stretch flex-center md:items-start justify-between py-10 px-2">
+        <div className="flex flex-col md:flex-row  flex-center md:items-start justify-between py-10 px-2">
           <div className="flex-1 h-full mb-6 md:mb-0 md:block hidden">
             <ThemeImage 
               lightSrc="logo-light.png" 
@@ -31,7 +31,9 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Community</h4>
             <ul className="flex items-center justify-center space-x-3">
               <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
-                <a href="#">
+                <a href="https://x.com/KorvLabs?t=1w2vxKHEzkGFaGrWx2M-KQ&s=09" 
+                  target="_blank"
+                  rel="noopener noreferrer">
                   X
                 </a>
               </li>

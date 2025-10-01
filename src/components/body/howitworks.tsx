@@ -6,8 +6,7 @@ export default function HowItWorks() {
       lightSrc: string;
       darkSrc: string;
       alt: string;
-      [key: string]: any;
-  }) {
+  } & React.ImgHTMLAttributes<HTMLImageElement>) {
       const [isDark, setIsDark] = useState(false);
 
       useEffect(() => {
@@ -124,4 +123,3 @@ export default function HowItWorks() {
     </section>
   );
 }
-

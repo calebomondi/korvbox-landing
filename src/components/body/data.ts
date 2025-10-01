@@ -1,10 +1,10 @@
 export const faqs = [
   {
-    question: "How does FVP work?",
-    answer: "Our platform allows you to lock your crypto assets for a specified period, helping you achieve your savings goals while ensuring financial discipline. You can select your preferred lock duration and monitor your locked assets in real time."
+    question: "How does Korvbox work?",
+    answer: "Korvbox allows users to deposit stablecoins into Morpho Protocol vaults, where they can earn yield by providing liquidity to verified borrowers. The process is fully transparent and operates through smart contracts on the Base blockchain."
   },
   {
-    question: "What are the benefits of using FVP?",
-    answer: "FVP offers several benefits, including the ability to earn interest on your locked assets, access to exclusive investment opportunities, and a user-friendly interface for managing your portfolio."
+    question: "What are the benefits of using Korvbox?",
+    answer: "Korvbox offers you stable, predictable returns on your USDC with simple management, strong security, full liquidity, and transparent real-time tracking of your earnings."
   }
 ]

@@ -13,7 +13,7 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="">
-      <div className="container mx-auto max-w-8xl mx-auto md:px-36 px-10 md:py-10 py-20">
+      <div className="container mx-auto max-w-8xl  md:px-36 px-10 md:py-10 py-20">
         <h2 className="font-manrope text-3xl md:text-4xl text-[#15181A] dark:text-white">
           FAQs
         </h2>
