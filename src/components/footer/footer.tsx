@@ -38,7 +38,9 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
-                <a href="#">
+                <a href="https://t.me/+smSwRik_O0E2MWRk"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   Telegram
                 </a>
               </li>
