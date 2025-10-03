@@ -1,6 +1,5 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import HomePage from './pages/HomePage'
-import MonkeyTreeLeaderboard from './pages/gamify'
 import PrivacyPolicy from './pages/legal/PrivacyPolicy'
 import Terms from './pages/legal/Terms'
 
@@ -9,8 +8,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/game" element={<MonkeyTreeLeaderboard />} />    
+          <Route path="/" element={<HomePage />} />  
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />  
           <Route path="/terms-of-use" element={<Terms />} />  
         </Routes>
