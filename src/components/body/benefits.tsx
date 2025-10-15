@@ -8,7 +8,7 @@ export default function Benefits() {
         <h2 className="font-manrope text-3xl md:text-4xl text-[#15181A] dark:text-white">
           Asset growth on autopilot
         </h2>
-        <p className="font-opensans mt-4 dark:text-gray-400 text-[#6F7174]">
+        <p className="font-opensans mt-4 dark:text-gray-400 text-gray-700">
           Transform your idle stablecoins into steady returns with zero effort. 
           Perfect for crypto holders who want passive growth without the complexity of traditional DeFi.
         </p>
@@ -26,7 +26,7 @@ export default function Benefits() {
             <h3 className="font-dmsans text-2xl text-[#15181A] dark:text-white">
               Enjoy competitive yields
             </h3>
-            <p className="font-inter mt-2 dark:text-gray-400 text-[#6F7174]">
+            <p className="font-inter mt-2 dark:text-gray-400 text-gray-700">
               Earn up to 10% APY. Your funds work harder while staying stable and secure.
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function Benefits() {
             <h3 className="font-dmsans text-2xl text-[#15181A] dark:text-white">
               Access funds anytime
             </h3>
-            <p className="font-inter mt-2 dark:text-gray-400 text-[#6F7174]">
+            <p className="font-inter mt-2 dark:text-gray-400 text-gray-700">
               No lockup periods, no penalties, full access to your funds 24/7. Withdraw whenever you need it.
             </p>
           </div>
@@ -58,7 +58,7 @@ export default function Benefits() {
             <h3 className="font-dmsans text-2xl text-[#15181A] dark:text-white">
               Zero management needed
             </h3>
-            <p className="font-inter mt-2 dark:text-gray-400 text-[#6F7174]">
+            <p className="font-inter mt-2 dark:text-gray-400 text-gray-700">
               No DeFi experience required. We automate the best yield strategies for you.
             </p>
           </div>

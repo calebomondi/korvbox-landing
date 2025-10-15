@@ -9,8 +9,8 @@ export default function Hero() {
     const fetchStats = async () => {
       try {
         const data = await getPlatformStats();
-        setStats(data);
-        console.log("Fetched platform stats:", data);
+        if(data)
+          setStats(data);
       } catch (error) {
         console.error("Error fetching platform stats:", error);
       }
@@ -36,7 +36,7 @@ export default function Hero() {
           <h1 className="font-manrope text-3xl md:text-5xl leading-tight text-[#15181A] dark:text-white text-center md:text-left">
             Earn stable returns <br /> on your digital assets
           </h1>
-          <p className="font-inter dark:text-gray-400 text-[#6F7174] mt-4 text-xl text-center md:text-left">
+          <p className="font-inter dark:text-gray-400 text-gray-700 mt-4 text-xl text-center md:text-left">
             Put your USDC to work and earn competitive yields and rewards
           </p>
 
@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="flex flex-col">
               <p className="font-inter dark:text-gray-400 text-[#6F7174] text-sm text-center md:text-left">Total Deposits</p>
               <p className="font-opensans text-2xl md:text-3xl font-semibold text-[#15181A] dark:text-white text-center md:text-left">
-                ${stats ? addCommas(Math.floor(stats.total_amount_deposited * usdPrice)) : addCommas(9678)}
+                ${stats ? addCommas(Math.ceil((stats.total_amount_deposited * usdPrice) / 1e6)) : addCommas(0)}
               </p>
             </div>
           </div>

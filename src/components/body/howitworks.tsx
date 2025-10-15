@@ -1,36 +1,36 @@
-import { useState, useEffect } from 'react';
+import ThemeImage from "../themeImage";
 
 export default function HowItWorks() {
   // Component to handle light/dark theme image changes
-  function ThemeImage({ lightSrc, darkSrc, alt, ...props }: {
-      lightSrc: string;
-      darkSrc: string;
-      alt: string;
-  } & React.ImgHTMLAttributes<HTMLImageElement>) {
-      const [isDark, setIsDark] = useState(false);
+  // function ThemeImage({ lightSrc, darkSrc, alt, ...props }: {
+  //     lightSrc: string;
+  //     darkSrc: string;
+  //     alt: string;
+  // } & React.ImgHTMLAttributes<HTMLImageElement>) {
+  //     const [isDark, setIsDark] = useState(false);
 
-      useEffect(() => {
-          // Check initial preference
-          const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-          setIsDark(mediaQuery.matches);
+  //     useEffect(() => {
+  //         // Check initial preference
+  //         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  //         setIsDark(mediaQuery.matches);
 
-          // Listen for changes
-          const handleChange = (e: MediaQueryListEvent) => {
-          setIsDark(e.matches);
-          };
+  //         // Listen for changes
+  //         const handleChange = (e: MediaQueryListEvent) => {
+  //         setIsDark(e.matches);
+  //         };
 
-          mediaQuery.addEventListener('change', handleChange);
-          return () => mediaQuery.removeEventListener('change', handleChange);
-      }, []);
+  //         mediaQuery.addEventListener('change', handleChange);
+  //         return () => mediaQuery.removeEventListener('change', handleChange);
+  //     }, []);
 
-      return (
-          <img 
-          src={isDark ? darkSrc : lightSrc} 
-          alt={alt} 
-          {...props}
-          />
-      );
-  }
+  //     return (
+  //         <img 
+  //         src={isDark ? darkSrc : lightSrc} 
+  //         alt={alt} 
+  //         {...props}
+  //         />
+  //     );
+  // }
 
   return (
     <section id='how-it-works' className="">
@@ -55,12 +55,12 @@ export default function HowItWorks() {
               </div>
             </div>
             <h3 className="font-dmsans text-2xl text-[#15181A] dark:text-white">
-              Deposit & Supply
+              Explore & Deposit
             </h3>
-            <p className="font-inter mt-2 dark:text-gray-400 text-[#6F7174]">
-              Start with as little as 5 USDC. Browse available Morpho vaults and choose 
-              the one that fits your goals. Select your deposit amount and supply to your 
-              chosen vault for maximum yields, or keep funds in your platform balance for flexibility.
+            <p className="font-inter mt-2 dark:text-gray-400 text-gray-700">
+              Start by exploring available Morpho vaults and choose 
+              the one that fits your goals. Input the amount you want to supply, as low as 5 USDC, and deposit.
+              You will recieve share tokens from the Vault as proof of supply.
             </p>
           </div>
 
@@ -77,12 +77,11 @@ export default function HowItWorks() {
               </div>
             </div>
             <h3 className="font-dmsans text-2xl text-[#15181A] dark:text-white">
-              Earn
+              Earn Yields & Rewards
             </h3>
-            <p className="font-inter mt-2 dark:text-gray-400 text-[#6F7174]">
-              Your supplied assets automatically earn yield based on the vault's APY plus protocol rewards, 
-              proportional to your deposit amount. Even unsupplied funds earn native Korvbox rewards based 
-              on your platform activity and deposit frequency.
+            <p className="font-inter mt-2 dark:text-gray-400 text-gray-700">
+              Your supplied assets will earn yield over time as people borrow from the vault. When interests are paid on the 
+              borrowed assets, the value of the shares that you received increase in value. You also recieve reward tokens as incentives for supplying.
             </p>
           </div>
 
@@ -99,21 +98,21 @@ export default function HowItWorks() {
               </div>
             </div>
             <h3 className="font-dmsans text-2xl text-[#15181A] dark:text-white">
-              Withdraw
+              Withdraw & Claim
             </h3>
-            <p className="font-inter mt-2 dark:text-gray-400 text-[#6F7174]">
-              Access your funds anytime. Vault withdrawals may have slight delays based on available liquidity, 
-              with funds first returning to your platform balance. Direct platform withdrawals go straight to 
-              your wallet instantly.
+            <p className="font-inter mt-2 dark:text-gray-400 text-gray-700">
+              Access your funds anytime by trading in the shares that you recieved. You will recieve USDC equivalent
+              to the value of the shares being traded in. Rewards token include MORPHO and other ERC20 tokens that can 
+              are claimed on a weekly basis.
             </p>
           </div>
         </div>
 
-        <p className="mt-8 mb-3 text-center font-opensans dark:text-gray-400 text-[#6F7174]">
+        <p className="mt-8 mb-3 text-center font-opensans dark:text-gray-400 text-gray-700">
             <span 
                 className='hover:underline cursor-pointer'
                 onClick={
-                    () => window.open('https://morpho.org/', '_blank')
+                    () => window.open('', '_blank')
                 }
             >
                 Watch Video Tutorial

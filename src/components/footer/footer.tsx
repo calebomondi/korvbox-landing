@@ -1,11 +1,13 @@
 import ThemeImage from "../themeImage"
+import { FaXTwitter } from "react-icons/fa6";
+import { LiaTelegram } from "react-icons/lia";
 
 export default function Footer() {
 
   return (
     <footer className="">
-      <div className="container mx-auto ">
-        <div className="flex flex-col md:flex-row  flex-center md:items-start justify-between py-10 px-2">
+      <div className="container mx-auto">
+        {/* <div className="flex flex-col md:flex-row  flex-center md:items-start justify-between py-10 px-2">
           <div className="flex-1 h-full mb-6 md:mb-0 md:block hidden">
             <ThemeImage 
               lightSrc="logo-light.png" 
@@ -46,17 +48,56 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="border-t border-[#9C9D9F]/30 dark:border-[#383B3E]/30 mt-3 py-4 px-2">
-          <div className="flex flex-col md:flex-row justify-center items-center">
+        </div> */}
+        <hr className="border-t my-2 md:mx-1 mx-5 dark:border-[#383B3E]/40 border-[#383B3E]/20 my-7"/>
+        <div className="pb-6 px-2">
+          <div className="flex flex-col md:space-y-0 space-y-5 md:flex-row justify-center md:justify-between items-center">
+            {/*Legal*/}
+            <div className="font-inter-semi">
+              <ul className="flex items-center justify-center space-x-3">
+                <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
+                  <a href="/terms-of-use">Terms of Use</a>
+                </li>
+                <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
+                  <a href="/privacy-policy">Privacy Policy</a>
+                </li>
+                <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
+                  <a href="#">Audit</a>
+                </li>
+              </ul>
+            </div>
             {/*Accolades*/}
-            <div className="flex items-center font-inter mt-1">
+            <div className="flex flex-col items-center font-inter">
               <span className="flex items-center text-sm text-[#383B3E] dark:text-[#6F7174]">
                 Built by
-                <a href="#" className="font-inter-semi hover:scale-105 underline ml-1">
-                  KorvLabs
-                </a>
               </span>
+              <ThemeImage 
+                lightSrc="kl_light.png" 
+                darkSrc="kl_dark.png" 
+                alt="Logo" 
+                className="w-24"
+              />
+            </div>
+            {/*Community*/}
+            <div className="font-inter-semi">
+              <ul className="flex items-center justify-center space-x-3">
+                <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
+                  <a href="https://x.com/KorvLabs?t=1w2vxKHEzkGFaGrWx2M-KQ&s=09" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaXTwitter size={24} />
+                  </a>
+                </li>
+                <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
+                  <a href="https://t.me/+smSwRik_O0E2MWRk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LiaTelegram size={27} />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
