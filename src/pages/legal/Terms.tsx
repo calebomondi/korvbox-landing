@@ -2,7 +2,7 @@
 
 export default function Terms () {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white">
+    <div className="max-w-4xl mx-auto p-6 bg-white shadow-md">
       {/* Title */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800 mb-4">TERMS OF USE</h1>
