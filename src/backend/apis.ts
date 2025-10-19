@@ -10,7 +10,7 @@ const API_URL = 'https://api.korvbox.xyz'
 export const getPlatformStats = async (): Promise<Stats> => {
     try {
         const response: AxiosResponse<Stats> = await axios.get(
-            `${API_URL}/api/stats`,
+            `${API_URL}/stats`,
             {
                 headers: {
                     'Content-Type': 'application/json'
