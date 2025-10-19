@@ -8,7 +8,7 @@ export default function Morpho() {
           <h1 className="font-manrope text-3xl md:text-4xl text-[#15181A] dark:text-white">
             About Morpho Protocol
           </h1>
-          <p className="font-opensans mt-4 dark:text-gray-400 text-[#6F7174]">
+          <p className="font-opensans mt-4 dark:text-gray-400 text-gray-700">
             Morpho is a leading onchain lending protocol on Base with over $10 billion in total value locked and 
             extensive third-party security audits. When you deposit through our platform, your stablecoins are 
             allocated to Morpho's yield-generating vaults where they earn returns by providing liquidity to 
@@ -17,7 +17,12 @@ export default function Morpho() {
 
           {/* Buttons */}
           <div className="flex gap-3 mt-6 justify-center md:justify-start">
-            <button className="font-opensans dark:bg-[#383B3E] bg-[#2973FF] text-white hover:scale-90 hover:cursor-pointer transition-all duration-300 px-5 py-2 rounded-full">
+            <button 
+              className="font-opensans dark:bg-[#383B3E] bg-[#2973FF] text-white hover:scale-90 hover:cursor-pointer transition-all duration-300 px-5 py-2 rounded-full"
+              onClick={
+                  () => window.open('https://docs.morpho.org/get-started/', '_blank')
+              }
+            >
               Learn More
             </button>
           </div>

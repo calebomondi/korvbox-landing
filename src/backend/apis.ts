@@ -2,7 +2,8 @@ import axios from 'axios'
 import type { AxiosResponse } from 'axios'
 import type { Stats } from '../types/index.types'
 
-const API_URL = 'http://localhost:3000'
+// const API_URL = 'http://localhost:3000'
+const API_URL = 'https://api.korvbox.xyz'
 
 /* api call for platform stats */
 
