@@ -101,9 +101,10 @@ export default function Navbar() {
               {['How It Works', 'Morpho', 'FAQ'].map((item) => (
                 <a
                   key={item}
-                  href={`/#${item.toLowerCase().replace(' ', '-')}`}
-                  className="font-opensans block px-3 text-center text-lg"
-                  onClick={() => setIsMenuOpen(false)}
+                  href={`/#${item.toLowerCase().replace(/ /g, '-')}`}
+                  className={`font-opensans transition-all duration-300  relative after:content-[''] after:absolute after:w-0 after:h-0.5
+                    hover:scale-105 hover:text-[#2973FF] dark:hover:text-[#FFFFFF] dark:text-gray-400
+                    ${activeSection === item.toLowerCase().replace(/ /g, '-') ? 'after:w-full' : ''}`}
                 >
                   {item}
                 </a>
