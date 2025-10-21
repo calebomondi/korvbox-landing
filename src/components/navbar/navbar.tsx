@@ -8,10 +8,6 @@ export default function Navbar() {
     const [isVisible, setIsVisible] = useState(true);
     const [isAtTop, setIsAtTop] = useState(true);
 
-    const handleDash = () => {
-      alert('heeyy!');
-    }
-
     // Handle scroll visibility and active section
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -36,7 +32,7 @@ export default function Navbar() {
     
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-      }, []);
+    }, []);
 
     // Check if the user is at the top of the page
     useEffect(() => {
@@ -81,7 +77,9 @@ export default function Navbar() {
               ))}
               <button
                 className="font-opensans bg-[#2973FF] text-white py-2 px-4 rounded-full btn-sm hover:scale-90 hover:cursor-pointer transition-all duration-300"
-                onClick={handleDash}
+                onClick={
+                  () => window.open('https://app.korvbox.xyz/', '_blank')
+                }
               >
                 Launch App
               </button>
@@ -112,7 +110,9 @@ export default function Navbar() {
               ))}
               <button
                 className="font-opensans bg-[#2973FF] text-white py-2 px-4 rounded-full btn-sm hover:scale-90 hover:cursor-pointer transition-all duration-300"
-                onClick={handleDash}
+                onClick={
+                  () => window.open('https://app.korvbox.xyz/', '_blank')
+                }
               >
                 Launch App
               </button>
