@@ -1,31 +1,31 @@
-import { useState, useEffect } from "react";
-import { getPlatformStats } from "../../backend/apis";
-import type { Stats } from "../../types/index.types";
+// import { useState, useEffect } from "react";
+// import { getPlatformStats } from "../../backend/apis";
+// import type { Stats } from "../../types/index.types";
 
 export default function Hero() {
-  const [stats, setStats] = useState<Stats | null>(null);
+  // const [stats, setStats] = useState<Stats | null>(null);
 
-  useEffect(() => {
-    const fetchStats = async () => {
-      try {
-        const data = await getPlatformStats();
-        if(data)
-          setStats(data);
-      } catch (error) {
-        console.error("Error fetching platform stats:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchStats = async () => {
+  //     try {
+  //       const data = await getPlatformStats();
+  //       if(data)
+  //         setStats(data);
+  //     } catch (error) {
+  //       console.error("Error fetching platform stats:", error);
+  //     }
+  //   };
 
-    fetchStats();
-  }, []);
+  //   fetchStats();
+  // }, []);
 
   // Helper function to format numbers with commas
-  function addCommas(num: number): string {
-    return num.toLocaleString("en-US");
-  }
+  // function addCommas(num: number): string {
+  //   return num.toLocaleString("en-US");
+  // }
 
-  // USD price (estimate)
-  const usdPrice = 0.9995;
+  // // USD price (estimate)
+  // const usdPrice = 0.9995;
 
   return (
     <section className="relative overflow-hidden xl:min-h-screen flex items-start">
@@ -42,20 +42,25 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex gap-3 mt-6 justify-center md:justify-start">
-            <button className="font-opensans dark:bg-[#383B3E] bg-[#2973FF] text-white hover:scale-90 hover:cursor-pointer transition-all duration-300 px-5 py-2 rounded-full">
+            <button 
+              className="font-opensans dark:bg-[#383B3E] bg-[#2973FF] text-white hover:scale-90 hover:cursor-pointer transition-all duration-300 px-5 py-2 rounded-full"
+              onClick={
+                () => window.open('https://app.korvbox.xyz/', '_blank')
+              }
+            >
               Start Earning
             </button>
           </div>
 
           {/* Stats */}
-          <div className="mt-10 flex flex-col sm:flex-row sm:gap-20 gap-6">
+          {/* <div className="mt-10 flex flex-col sm:flex-row sm:gap-20 gap-6">
             <div className="flex flex-col">
               <p className="font-inter dark:text-gray-400 text-[#6F7174] text-sm text-center md:text-left">Total Deposits</p>
               <p className="font-opensans text-2xl md:text-3xl font-semibold text-[#15181A] dark:text-white text-center md:text-left">
                 ${stats ? addCommas(Math.ceil((stats.total_amount_deposited * usdPrice) / 1e6)) : addCommas(0)}
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
         
         {/* Right Content */}
