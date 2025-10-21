@@ -18,7 +18,7 @@ export default function FinalCall() {
             <button 
               className="font-opensans dark:bg-[#383B3E] bg-[#2973FF] text-white hover:scale-90 hover:cursor-pointer transition-all duration-300 px-5 py-2 rounded-full"
               onClick={
-                  () => window.open('', '_blank')
+                  () => window.open('https://app.korvbox.xyz/', '_blank')
               }
             >
               Start Earning
