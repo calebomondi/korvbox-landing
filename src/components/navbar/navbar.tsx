@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between md:h-18 h-16">
             {/* Logo */}
-            <div className="flex items-center justify-center space-x-5">
+            <div className="flex items-center justify-center space-x-1">
               <a href="/">
               {
                 <ThemeImage 
@@ -61,6 +61,9 @@ export default function Navbar() {
                 />
               }
               </a>
+              <div className="text-white dark:text-[#15181A] dark:bg-white bg-[#2973FF] text-xs font-manrope-semi py-1 px-2 rounded-md">
+                <span>Beta</span>
+              </div>
             </div>
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
