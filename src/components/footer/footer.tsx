@@ -1,6 +1,7 @@
 import ThemeImage from "../themeImage"
 import { FaXTwitter } from "react-icons/fa6";
 // import { LiaTelegram } from "react-icons/lia";
+import { AiOutlineAudit } from "react-icons/ai";
 
 export default function Footer() {
 
@@ -62,7 +63,9 @@ export default function Footer() {
                   <a href="/privacy-policy">Privacy Policy</a>
                 </li> */}
                 <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
-                  <a href="/audit">Audit</a>
+                  <a href="/audit" className="flex items-center justify-center space-x-1">
+                    <span><AiOutlineAudit size={24}/></span> <span>Audit</span>
+                  </a>
                 </li>
               </ul>
             </div>
