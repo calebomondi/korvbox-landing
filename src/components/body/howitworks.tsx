@@ -112,7 +112,7 @@ export default function HowItWorks() {
             <span 
                 className='hover:underline cursor-pointer'
                 onClick={
-                    () => window.open('', '_blank')
+                    () => window.open('https://www.loom.com/share/6dedffdad7e647c789bd07a3f54cb6c9', '_blank')
                 }
             >
                 Watch Video Tutorial
