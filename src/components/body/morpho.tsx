@@ -2,21 +2,21 @@ export default function Morpho() {
   return (
     <section id="morpho" className="relative overflow-hidden flex items-start dark:bg-[#222529]/30 bg-[#C4DAFF]/20">
       {/* Container with reduced top padding */}
-      <div className="max-w-8xl mx-auto md:px-36 px-10 md:py-20 py-20 flex flex-col lg:flex-row md:items-start lg:items-center w-full">
+      <div className="max-w-8xl mx-auto md:px-36 px-10  py-20 flex flex-col lg:flex-row items-center w-full">
         {/* Left Content */}
         <div className="flex-3">
-          <h1 className="font-manrope text-3xl md:text-4xl text-[#15181A] dark:text-white">
+          <h1 className="font-manrope text-center lg:text-left text-3xl md:text-4xl text-[#15181A] dark:text-white">
             About Morpho Protocol
           </h1>
-          <p className="font-opensans mt-4 dark:text-gray-400 text-gray-700">
-            Morpho is a leading onchain lending protocol on Base with over $10 billion in total value locked and 
+          <p className="font-opensans text-center lg:text-left mt-4 dark:text-gray-400 text-gray-700">
+            Morpho is a leading onchain lending protocol with over $10 billion in total value locked and 
             extensive third-party security audits. When you deposit through our platform, your stablecoins are 
             allocated to Morpho's yield-generating vaults where they earn returns by providing liquidity to 
             verified borrowers. The entire process operates transparently on-chain through Morpho's battle-tested smart contracts.
           </p>
 
           {/* Buttons */}
-          <div className="flex gap-3 mt-6 justify-center md:justify-start">
+          <div className="flex gap-3 mt-6 justify-center lg:justify-start">
             <button 
               className="font-opensans dark:bg-[#383B3E] bg-[#2973FF] text-white hover:scale-90 hover:cursor-pointer transition-all duration-300 px-5 py-2 rounded-full"
               onClick={
@@ -29,7 +29,7 @@ export default function Morpho() {
         </div>
         
         {/* Right Content */}
-        <div className="flex-3 flex justify-center md:mt-0 mt-10 md:justify-end items-center -z-10">
+        <div className="flex-3 flex justify-center lg:mt-0 mt-10 lg:justify-end items-center -z-10">
             <svg width="300" height="300" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="200" height="200" fill="#2973FF"/>
                 <path opacity="0.8" d="M58.6604 117.953V147.059C58.6604 148.851 60.1768 149.595 60.6486 149.764C61.1204 149.967 62.7042 150.406 64.1195 149.088L86.1389 127.927C88.0141 126.126 89.8238 124.231 91.1838 122.015C91.8239 120.973 92.0893 120.387 92.0893 120.387C93.4373 117.648 93.4373 115.011 92.1226 112.375C90.1689 108.453 85.1811 104.464 77.666 100.678L64.8272 107.845C61.0194 110.008 58.6604 113.828 58.6604 117.953Z" fill="white"/>

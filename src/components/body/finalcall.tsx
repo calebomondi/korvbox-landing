@@ -2,8 +2,8 @@
 export default function FinalCall() {
   return (
     <section className="dark:bg-[#222529]/30 bg-[#C4DAFF]/20">
-        <div className="ax-w-8xl mx-auto md:px-36 px-10 md:py-10 py-20">
-          <h1 className="font-manrope text-3xl md:text-4xl text-[#15181A] dark:text-white text-center">
+        <div className="ax-w-8xl mx-auto lg:px-36 px-10 lg:py-10 py-20">
+          <h1 className="font-manrope text-3xl lg:text-4xl text-[#15181A] dark:text-white text-center">
             Built for Earning, Not Trading
           </h1>
           <p className="font-opensans my-2 dark:text-gray-400 text-gray-700 text-center">

@@ -28,20 +28,20 @@ export default function Hero() {
   // const usdPrice = 0.9995;
 
   return (
-    <section className="relative overflow-hidden xl:min-h-screen flex items-start">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center">
       {/* Container with reduced top padding */}
-      <div className="max-w-8xl mx-auto md:px-36 px-10 md:py-5 py-20 flex flex-col lg:flex-row md:items-start lg:items-center w-full">
+      <div className="max-w-8xl mx-auto lg:px-36 px-10 lg:py-5 py-20 flex flex-col lg:flex-row lg:items-center w-full">
         {/* Left Content */}
         <div className="flex-3">
-          <h1 className="font-manrope text-3xl md:text-5xl leading-tight text-[#15181A] dark:text-white text-center md:text-left">
+          <h1 className="font-manrope text-3xl md:text-5xl leading-tight text-[#15181A] dark:text-white text-center lg:text-left">
             Earn stable returns <br /> on your digital assets
           </h1>
-          <p className="font-inter dark:text-gray-400 text-gray-700 mt-4 text-xl text-center md:text-left">
+          <p className="font-inter dark:text-gray-400 text-gray-700 mt-4 text-xl text-center lg:text-left">
             Put your USDC to work and earn competitive yields and rewards
           </p>
 
           {/* Buttons */}
-          <div className="flex gap-3 mt-6 justify-center md:justify-start">
+          <div className="flex gap-3 my-6 justify-center lg:justify-start">
             <button 
               className="font-opensans dark:bg-[#383B3E] bg-[#2973FF] text-white hover:scale-90 hover:cursor-pointer transition-all duration-300 px-5 py-2 rounded-full"
               onClick={
@@ -64,11 +64,11 @@ export default function Hero() {
         </div>
         
         {/* Right Content */}
-        <div className="flex-3 flex justify-center md:mt-0 mt-10 md:justify-end items-center -z-10">
+        <div className="flex-3 flex justify-center md:mt-0 mt-10 lg:justify-end items-center -z-10">
             <img 
               src="interest-rate.png" 
               alt="Blue Orb" 
-              className="w-80 h-80 md:w-110 md:h-110 object-contain"
+              className="w-80 h-80 md:w-100 md:h-100 object-contain"
             />
         </div>
 

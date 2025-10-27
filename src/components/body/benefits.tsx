@@ -3,7 +3,7 @@
 export default function Benefits() {
   return (
     <section className="dark:bg-[#222529]/30 bg-[#C4DAFF]/20">
-      <div className="max-w-8xl mx-auto md:px-36 px-10 md:py-10 py-20 text-left">
+      <div className="max-w-8xl mx-auto lg:px-36 px-10 lg:py-10 py-20 text-left">
         {/* Heading */}
         <h2 className="font-manrope text-3xl md:text-4xl text-[#15181A] dark:text-white">
           Asset growth on autopilot

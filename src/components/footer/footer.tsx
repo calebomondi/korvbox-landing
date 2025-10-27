@@ -50,9 +50,9 @@ export default function Footer() {
             </ul>
           </div>
         </div> */}
-        <hr className="border-t my-2 md:mx-1 mx-5 dark:border-[#383B3E]/40 border-[#383B3E]/20 my-7"/>
-        <div className="pb-6 px-2">
-          <div className="flex flex-col md:space-y-0 space-y-5 md:flex-row justify-center md:justify-between items-center">
+        <hr className="border-t lg:mx-1 mx-5 dark:border-[#383B3E]/40 border-[#383B3E]/20 my-5"/>
+        <div className="pb-6 lg:px-2 px-5">
+          <div className="flex flex-col md:space-y-2 space-y-5 md:flex-row justify-center md:justify-between items-center">
             {/*Legal & Audit*/}
             <div className="font-inter-semi">
               <ul className="flex items-center justify-center space-x-3">
@@ -63,7 +63,7 @@ export default function Footer() {
                   <a href="/privacy-policy">Privacy Policy</a>
                 </li> */}
                 <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
-                  <a href="/audit" className="flex items-center justify-center space-x-1">
+                  <a href="/audit" className="flex items-center justify-center">
                     <span><AiOutlineAudit size={24}/></span> <span>Audit</span>
                   </a>
                 </li>

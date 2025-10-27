@@ -34,7 +34,7 @@ export default function HowItWorks() {
 
   return (
     <section id='how-it-works' className="">
-      <div className="max-w-8xl mx-auto md:px-36 px-10 md:py-10 py-20 text-left">
+      <div className="max-w-8xl mx-auto lg:px-36 px-10 lg:py-10 py-20 text-left">
         {/* Heading */}
         <h2 className="font-manrope text-3xl md:text-4xl text-[#15181A] dark:text-white">
           How It Works
@@ -112,7 +112,7 @@ export default function HowItWorks() {
             <span 
                 className='hover:underline cursor-pointer'
                 onClick={
-                    () => window.open('https://www.loom.com/share/6dedffdad7e647c789bd07a3f54cb6c9', '_blank')
+                    () => window.open('https://www.loom.com/share/aed08e9c58464245883a6ce52763982b', '_blank')
                 }
             >
                 Watch Video Tutorial
