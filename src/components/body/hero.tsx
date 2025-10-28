@@ -28,7 +28,7 @@ export default function Hero() {
   // const usdPrice = 0.9995;
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center justify-center">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center md:-top-18 -top-16 md:-mb-18 -mb-16">
       {/* Container with reduced top padding */}
       <div className="max-w-8xl mx-auto lg:px-36 px-10 lg:py-5 py-20 flex flex-col lg:flex-row lg:items-center w-full">
         {/* Left Content */}
