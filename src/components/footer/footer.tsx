@@ -1,7 +1,5 @@
-import ThemeImage from "../themeImage"
 import { FaXTwitter } from "react-icons/fa6";
 // import { LiaTelegram } from "react-icons/lia";
-import { AiOutlineAudit } from "react-icons/ai";
 
 export default function Footer() {
 
@@ -56,21 +54,21 @@ export default function Footer() {
             {/*Legal & Audit*/}
             <div className="font-inter-semi">
               <ul className="flex items-center justify-center space-x-3">
-                {/* <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
+                <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
                   <a href="/terms-of-use">Terms of Use</a>
                 </li>
                 <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
                   <a href="/privacy-policy">Privacy Policy</a>
-                </li> */}
+                </li>
                 <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
                   <a href="/audit" className="flex items-center justify-center">
-                    <span><AiOutlineAudit size={24}/></span> <span>Audit</span>
+                    <span>Audit</span>
                   </a>
                 </li>
               </ul>
             </div>
             {/*Accolades*/}
-            <div className="flex flex-col items-center font-inter">
+            {/* <div className="flex flex-col items-center font-inter">
               <span className="flex items-center text-sm text-[#383B3E] dark:text-[#6F7174]">
                 Built by
               </span>
@@ -80,7 +78,7 @@ export default function Footer() {
                 alt="Logo" 
                 className="w-24"
               />
-            </div>
+            </div> */}
             {/*Community*/}
             <div className="font-inter-semi">
               <ul className="flex items-center justify-center space-x-3">
