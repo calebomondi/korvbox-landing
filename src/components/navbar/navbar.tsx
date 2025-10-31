@@ -61,9 +61,9 @@ export default function Navbar() {
                 />
               }
               </a>
-              <div className="text-white dark:text-[#15181A] dark:bg-white bg-[#2973FF] text-xs font-manrope-semi py-1 px-2 rounded-md">
+              {/* <div className="text-white dark:text-[#15181A] dark:bg-white bg-[#2973FF] text-xs font-manrope-semi py-1 px-2 rounded-md">
                 <span>Beta</span>
-              </div>
+              </div> */}
             </div>
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
