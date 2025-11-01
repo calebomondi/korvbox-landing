@@ -71,8 +71,8 @@ export default function Terms () {
           <p className="mb-4 text-gray-700 leading-relaxed">
             We care about data privacy and security. Please review our Privacy Policy:{' '}
             <strong>
-              <a href="http://www.korvbox.xyz/privacy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
-                http://www.korvbox.xyz/privacy
+              <a href="http://www.korvbox.xyz/privacy-policy" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                http://www.korvbox.xyz/privacy-policy
               </a>
             </strong>
             . By using the Services, you agree to be bound by our Privacy Policy, which is incorporated into these Legal Terms. 
