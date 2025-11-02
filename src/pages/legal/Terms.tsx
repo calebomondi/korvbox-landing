@@ -48,8 +48,8 @@ export default function Terms () {
           </p>
         </section>
 
-        {/* Section 2b: Morpho */}
-        <section id="2b" className="mb-8">
+        {/* Section 3: Morpho */}
+        <section id="3" className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-700">3. Morpho</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             The Services integrate with Morpho, a decentralized finance protocol that enables users to lend and borrow 
@@ -58,7 +58,7 @@ export default function Terms () {
         </section>
 
         {/* Section 3: User Data */}
-        <section id="3" className="mb-8">
+        <section id="4" className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-700">4. User Data</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             We will maintain all transactions data for deposits and withdrawals made to each Morpho vault for the purpose of measuring platform metrics. 
@@ -66,7 +66,7 @@ export default function Terms () {
         </section>
 
         {/* Section 4: Prohibited Activities */}
-        <section id="4" className="mb-8">
+        <section id="5" className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-700">5. Prohibited Activities</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             You may not access or use the Services for any purpose other than that for which we make the Services available. 
@@ -76,7 +76,7 @@ export default function Terms () {
         </section>
 
         {/* Section 5: Privacy Policy */}
-        <section id="5" className="mb-8">
+        <section id="6" className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-700">6. Privacy Policy</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             We care about data privacy and security. Please review our Privacy Policy:{' '}
@@ -94,7 +94,7 @@ export default function Terms () {
         </section>
 
         {/* Section 11: Modifications and Interruptions */}
-        <section id="6" className="mb-8">
+        <section id="7" className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-700">7. Interruptions</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             We cannot guarantee the Services will be available at all times. We may experience hardware, software, or other 
@@ -108,7 +108,7 @@ export default function Terms () {
         </section>
 
         {/* Section 7: Dispute Resolution */}
-        <section id="7" className="mb-8">
+        <section id="8" className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-700">8. Dispute Resolution</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             You agree to irrevocably submit all disputes related to these Legal Terms or the legal relationship established 
@@ -119,7 +119,7 @@ export default function Terms () {
         </section>
 
         {/* Section 8: Corrections */}
-        <section id="8" className="mb-8">
+        <section id="9" className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-700">9. Corrections</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including 
@@ -129,7 +129,7 @@ export default function Terms () {
         </section>
 
         {/* Section 9: Contact Us */}
-        <section id="9" className="mb-8">
+        <section id="10" className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-700">10. Contact Us</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             In order to resolve a complaint regarding the Services or to receive further information regarding use of the 
