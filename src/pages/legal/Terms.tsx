@@ -16,13 +16,14 @@ export default function Terms () {
           <ol className="list-decimal list-inside space-y-2 text-blue-600">
             <li><a href="#1" className="hover:underline">Acceptance of Terms</a></li>
             <li><a href="#2" className="hover:underline">User Representations</a></li>
-            <li><a href="#3" className="hover:underline">User Data</a></li>
-            <li><a href="#4" className="hover:underline">Prohibited Activities</a></li>
-            <li><a href="#5" className="hover:underline">Privacy Policy</a></li>
-            <li><a href="#6" className="hover:underline">Interruptions</a></li>
-            <li><a href="#7" className="hover:underline">Dispute Resolution</a></li>
-            <li><a href="#8" className="hover:underline">Corrections</a></li>
-            <li><a href="#9" className="hover:underline">Contact Us</a></li>
+            <li><a href="#3" className="hover:underline">Morpho</a></li>
+            <li><a href="#4" className="hover:underline">User Data</a></li>
+            <li><a href="#5" className="hover:underline">Prohibited Activities</a></li>
+            <li><a href="#6" className="hover:underline">Privacy Policy</a></li>
+            <li><a href="#7" className="hover:underline">Interruptions</a></li>
+            <li><a href="#8" className="hover:underline">Dispute Resolution</a></li>
+            <li><a href="#9" className="hover:underline">Corrections</a></li>
+            <li><a href="#10" className="hover:underline">Contact Us</a></li>
           </ol>
         </div>
 
@@ -47,9 +48,18 @@ export default function Terms () {
           </p>
         </section>
 
+        {/* Section 2b: Morpho */}
+        <section id="2b" className="mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">3. Morpho</h2>
+          <p className="mb-4 text-gray-700 leading-relaxed">
+            The Services integrate with Morpho, a decentralized finance protocol that enables users to lend and borrow 
+            cryptocurrencies. All deposits made are directly supplied to Morpho and can also be accessed on the Morpho platform directly. By using the Services, you acknowledge and agree that your interactions with Morpho are governed by Morpho's own terms and conditions, and that KorvLabs is not responsible for any issues or disputes arising from your use of Morpho.
+          </p>
+        </section>
+
         {/* Section 3: User Data */}
         <section id="3" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-700">3. User Data</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">4. User Data</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             We will maintain all transactions data for deposits and withdrawals made to each Morpho vault for the purpose of measuring platform metrics. 
           </p>
@@ -57,7 +67,7 @@ export default function Terms () {
 
         {/* Section 4: Prohibited Activities */}
         <section id="4" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-700">4. Prohibited Activities</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">5. Prohibited Activities</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             You may not access or use the Services for any purpose other than that for which we make the Services available. 
             The Services may not be used in connection with any commercial endeavours except those that are specifically 
@@ -67,7 +77,7 @@ export default function Terms () {
 
         {/* Section 5: Privacy Policy */}
         <section id="5" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-700">5. Privacy Policy</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">6. Privacy Policy</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             We care about data privacy and security. Please review our Privacy Policy:{' '}
             <strong>
@@ -85,7 +95,7 @@ export default function Terms () {
 
         {/* Section 11: Modifications and Interruptions */}
         <section id="6" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-700">11. Interruptions</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">7. Interruptions</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             We cannot guarantee the Services will be available at all times. We may experience hardware, software, or other 
             problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. 
@@ -99,7 +109,7 @@ export default function Terms () {
 
         {/* Section 7: Dispute Resolution */}
         <section id="7" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-700">7. Dispute Resolution</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">8. Dispute Resolution</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             You agree to irrevocably submit all disputes related to these Legal Terms or the legal relationship established 
             by these Legal Terms to the jurisdiction of the Kenya courts. KorvLabs shall also maintain the right to bring 
@@ -110,7 +120,7 @@ export default function Terms () {
 
         {/* Section 8: Corrections */}
         <section id="8" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-700">8. Corrections</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">9. Corrections</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including 
             descriptions, availability, and various other information. We reserve the right to correct any errors, 
@@ -120,7 +130,7 @@ export default function Terms () {
 
         {/* Section 9: Contact Us */}
         <section id="9" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-700">9. Contact Us</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">10. Contact Us</h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
             In order to resolve a complaint regarding the Services or to receive further information regarding use of the 
             Services, please contact us at:
