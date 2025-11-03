@@ -1,5 +1,5 @@
 import { FaXTwitter } from "react-icons/fa6";
-// import { LiaTelegram } from "react-icons/lia";
+import { LiaTelegram } from "react-icons/lia";
 
 export default function Footer() {
 
@@ -90,14 +90,14 @@ export default function Footer() {
                     <FaXTwitter size={24} />
                   </a>
                 </li>
-                {/* <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
+                <li className="text-[#383B3E] dark:text-[#6F7174] hover:scale-105 cursor-pointer hover:text-[#2973FF] dark:hover:text-white">
                   <a href="https://t.me/+smSwRik_O0E2MWRk"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <LiaTelegram size={27} />
                   </a>
-                </li> */}
+                </li>
               </ul>
             </div>
           </div>
